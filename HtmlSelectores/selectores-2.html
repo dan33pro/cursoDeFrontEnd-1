@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Todos los p dentro de un div*/
+        div p {
+            color: lime;
+        }
+
+        /*Todos los div hijos directos de un div*/
+        div > div {
+            background: plum;
+        }
+
+        /*Clases .NameClass*/
+        .es {
+            background: red;
+        }
+
+        /*Todos los section como hermanos directos de un div*/
+        div + section {
+            background: palevioletred;
+        }
+
+        /*Todos los p proximos(hermanos) a un div*/
+        div ~ p {
+            color: powderblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Platzi</p>
+        <p>Es</p>
+        <p>Increible</p>
+    </div>
+
+    <div>
+        <div>
+            <p>Probar es</p>
+            <div class="es">Tu mejor opción</div>
+        </div>    
+    </div>
+    <p>Clase de selactores</p>
+    <p>Hermanos del div</p>
+    <section>
+        Es lo mejor
+    </section>
+</body>
+</html>

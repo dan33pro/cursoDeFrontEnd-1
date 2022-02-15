@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+
+        /*pseudoclase hover al pasar el mouse*/
+        p:hover {
+            color: skyblue;
+        }
+        /*pseudoclase nth-child para que se apliquen al hijo N*/
+        div p:nth-child(2){
+            color: violet;
+        }
+
+        /*pseudoelemento primera letra*/
+        p::first-letter {
+            color: black;
+        }
+
+        /*pseudoelemento antes*/
+        p::before {
+            content: "🧠";
+        }
+
+        /*pseudoelemento despues*/
+        p::after {
+            content: "💕";
+        }
+
+        /*pseudoelemento placeholder*/
+        ::placeholder {
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Selectores</p>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, hic at voluptates iure optio aliquam aperiam doloremque suscipit quis soluta blanditiis porro cupiditate praesentium animi omnis similique rem beatae necessitatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam fugiat officiis mollitia commodi reprehenderit sunt. Quaerat ad nulla incidunt dicta ratione dignissimos, ullam quidem rerum assumenda, vel quos officiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi autem eaque, repellendus itaque dignissimos. Earum sapiente autem totam cum aut voluptatum provident eveniet. Provident suscipit ducimus aliquam eveniet maiores.</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
