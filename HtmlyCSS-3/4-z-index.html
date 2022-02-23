@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        section div {
+            display: block;
+            position: absolute;
+            background: palegoldenrod;
+        }
+
+        .one {
+            z-index: 2;
+        }
+        
+        .two {
+            z-index: 1;
+        }
+
+        .ejemplo {
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            opacity: 0.8;
+        }
+
+        .color {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        #red {
+            background: red;
+            color: white;
+            z-index: 6;
+            grid-row: 3 / 6;
+            grid-column: 1 / 4;
+        }
+
+        #blue {
+            background: blue;
+            color : white;
+            z-index: 4;
+            grid-row: 2 / 5;
+            grid-column: 2 / 5;
+        }
+
+        #yellow {
+            background: yellow;
+            z-index: 5;
+            color: black;
+            grid-row: 4 / 7;
+            grid-column: 3 / 6;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>Platzi</div>
+        <div>Master</div>
+    </section>
+    <section>
+        <div>Master</div>
+        <div>Platzi</div>
+    </section>
+    <section>
+        <div class="one">Arriba</div>
+        <div class="two">Abajo</div>
+    </section>
+    <div class="ejemplo">
+        <div class="color" id="red">Red</div>
+        <div class="color" id="blue">Blue</div>
+        <div class="color" id="yellow">Yellow</div>
+    </div>
+</body>
+</html>
